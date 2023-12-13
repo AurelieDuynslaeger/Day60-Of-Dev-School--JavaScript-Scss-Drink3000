@@ -5,10 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/59b11fefb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Drink 3000</title>
 </head>
 <body>
+
+    <section class="navbar" id="navbar">
+        <div class="container">
+            <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+            <nav>
+                <a href="">Recettes</a>
+                <a href="">Références</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="indexVideo">
+        <video autoplay loop><source src="/Drink3000/assets/vid/mp4/Pour.mp4" type="video/mp4"></video>
+        <div class="contenuVideo">
+          <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+          <p>Découvrez nos boissons énergisantes !</p>
+            <div class="flecheScroll">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="recettesDuSite">
+
+        <div class="recettes">
+            <h2>NOS RECETTES</h2>
+            <div class="boutonsProduits">
+                <button class="energisantes">Energisantes</button>
+                <button class="desalterantes">Désaltérantes</button>
+            </div>
+        </div>
+
+        <div class="recette-container">
+            <div class="recette1">
+                <div class="recetteContenu">
+                    <h3>Original</h3>
+                    <i class="fa-solid fa-bolt"></i>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette2">
+                <div class="recetteContenu">
+                    <h3>Mojito</h3>
+                    <i class="fa-solid fa-bolt"></i>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, saveur mojito à la caféine et sans alcool.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette3">
+                <div class="recetteContenu">
+                    <h3>Tropical</h3>
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div class="separator"></div>
+                    <p>Non disponible. Veuillez modifier votre sélection pour sélectionner cette recette.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        var navbar = document.getElementById("navbar");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 0) {
+            navbar.style.opacity = "1";
+            } else {
+            navbar.style.opacity = "0";
+            }
+        });
+        });
+    </script>
     
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
 </body>
 </html>

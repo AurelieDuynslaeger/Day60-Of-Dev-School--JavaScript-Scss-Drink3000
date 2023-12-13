@@ -13,4 +13,202 @@ body {
   background-color: white;
 }
 
+
+
+/* navbar */
+
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* video */
+
+
+
+.indexVideo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenuVideo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-container {
+  /* ... vos styles existants ... */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  align-self: center;
+}
+
+.flecheScroll {
+  font-size: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+/* articles */
+
+
+
+.recettes {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(48, 48, 48);
+}
+
+.energisantes, .desalterantes {
+  color: rgb(48, 48, 48);
+  background-color: rgb(211, 199, 190);
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+
+
+.recetteContenu {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+i {
+  position: absolute;
+  top: 0; /* Aligné en haut */
+  right: 0; /* Aligné à droite */
+  font-size: 24px;
+  color: white;
+}
+
+h3 {
+  position: relative;
+  padding-bottom: 20px; /* Espace pour le trait séparateur */
+}
+
+.buttons {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between; /* Aligner les boutons à gauche et à droite */
+}
+
+.plusInfos {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+
+.selectionner {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.recette-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.recette1, .recette2, .recette3 {
+  flex: 0 0 auto;
+  max-width: 30%;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.separator {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 40px; /* Ajuster au besoin */
+  height: 1px;
+  background-color: white;
+}
+
+.recette1 {
+  background-color: rgb(189, 23, 23);
+}
+
+.recette2 {
+  background-color: rgb(44, 131, 32);
+}
+
+.recette3 {
+  background-color: rgb(131, 46, 35);
+}
+
 /*# sourceMappingURL=main.css.map */
