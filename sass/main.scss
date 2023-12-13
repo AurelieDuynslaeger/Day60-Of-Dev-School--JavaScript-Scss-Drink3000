@@ -3,3 +3,126 @@
 @use "variables" as v;
 @use "mixins" as mix;
 
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.references {
+    width:100%;
+    & h1{
+        text-align: center;
+        text-transform: uppercase;
+        color:v.$color-secondary;
+        padding:1rem;
+    }
+    .subtitles {
+        text-transform: uppercase;
+        color: v.$color-secondary;
+        padding: 2rem;
+    }
+    & img{
+        width:100%;
+    }
+    & p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    @media screen and (min-width:v.$md-breakpoint){
+        & h1{
+            padding:4rem;
+            font-size: 5rem;
+        }
+        & p{
+            font-size: 1.5rem;
+            padding: 5rem;
+        }
+    }
+}
+
+.refParts {
+    @media screen and (min-width:v.$md-breakpoint){
+        display: flex;
+        justify-content: center;
+        & img{
+            width:20%;
+            margin:2rem;
+        }
+    }
+}
+
+.part {
+    @media screen and (min-width:v.$md-breakpoint){
+        display: flex;
+        flex-basis: 30%;
+        align-items: flex-start;
+        & img {
+            width:100%;
+            margin:1rem;
+        }
+    }
+}
+
+  
+footer{
+    background-color: v.$color-bgDark;
+    color: v.$color-primary;
+    width:100%;
+    margin:auto;
+}
+
+footer .container {
+    @media screen and (min-width:v.$md-breakpoint){
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+footer .form {
+    width:80%;
+    margin:auto;
+    padding: 1rem 0 1rem 0;
+    & .title {
+        text-align: center;
+    }
+    & .input-group {
+        display: flex;
+        justify-content: center;
+    }
+    & input, select, textarea {
+        width:60%;
+        padding: 0.5rem;
+        margin:0.5rem;
+    }
+}
+
+footer .map {
+    width:80%;
+    margin:auto;
+    padding: 1rem 0 1rem 0;
+    & .title {
+        text-align: center;
+    }
+   & iframe {
+    width:100%;
+   }
+}
+
+
+
+
+// .form {
+//     margin:auto;
+//     &.input-group{
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//     }
+// }
+
+// .map{
+//     margin:auto;
+// }
+
