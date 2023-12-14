@@ -3,3 +3,256 @@
 @use "variables" as v;
 @use "mixins" as mix;
 
+//Importer les fichiers partiels
+@use "reset";
+@use "variables" as v;
+@use "mixins" as mix;
+
+$color_1: #fff;
+$color_2: grey;
+$color_3: white;
+$color_4: rgb(48, 48, 48);
+$color_5: #333333;
+$color_6: rgb(82, 82, 82);
+$font-family_1: "Gilroy", sans-serif;
+$background-color_1: white;
+$background-color_2: rgba(0, 0, 0, 0.7);
+$background-color_3: rgb(211, 199, 190);
+$background-color_4: rgba(0, 0, 0, 0.3);
+$background-color_5: transparent;
+$background-color_6: #e20614;
+$background-color_7: #a0c525;
+$background-color_8: #c94c05;
+$background-color_9: #d2d0c3;
+
+@import "https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap";
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/gilroy.woff2") format("woff2"), url("../fonts/gilroy.woff") format("woff"), url("../fonts/gilroy.ttf") format("truetype");
+}
+/* navbar */
+/* video */
+/* recettes */
+/* Choix boisson */
+/*# sourceMappingURL=main.css.map */
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+	margin: 0;
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $background-color_2;
+	color: $color_1;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 7;
+	a {
+		color: $color_1;
+		margin: 0 10px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	h1 {
+		color: $color_2;
+		margin-right: auto;
+	}
+	i {
+		color: $color_2;
+		margin-right: auto;
+	}
+}
+.indexVideo {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	p {
+		font-size: 75px;
+	}
+}
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.contenuVideo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	color: $color_1;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	h1 {
+		margin: 0;
+		color: $color_3;
+		font-size: 60px;
+	}
+	p {
+		margin-bottom: 20%;
+	}
+}
+i {
+	margin: 0;
+	color: $color_3;
+	font-size: 60px;
+}
+.flecheScroll {
+	font-size: 50px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.recettes {
+	text-align: center;
+	margin-top: 20px;
+	color: $color_4;
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		color: $color_5;
+		padding: 1rem;
+	}
+}
+.energisantes {
+	color: $color_4;
+	background-color: $background-color_3;
+	border-radius: 20px;
+	border: none;
+	padding: 10px;
+}
+.desalterantes {
+	color: $color_4;
+	background-color: $background-color_3;
+	border-radius: 20px;
+	border: none;
+	padding: 10px;
+}
+.recetteContenu {
+	position: relative;
+	padding-bottom: 40px;
+}
+.recette-container {
+	i {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 24px;
+		color: $color_3;
+	}
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+h3 {
+	position: relative;
+	padding-bottom: 20px;
+}
+.buttons {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.plusInfos {
+	background-color: $background-color_4;
+	border-radius: 20px;
+	border: none;
+	color: $color_3;
+	padding: 10px;
+}
+.selectionner {
+	background-color: $background-color_5;
+	border: none;
+	color: $color_3;
+}
+.recette1 {
+	flex: 0 0 auto;
+	max-width: 20%;
+	margin: 10px;
+	padding: 20px;
+	color: $color_3;
+	border-radius: 5px;
+	position: relative;
+	background-color: $background-color_6;
+}
+.recette2 {
+	flex: 0 0 auto;
+	max-width: 20%;
+	margin: 10px;
+	padding: 20px;
+	color: $color_3;
+	border-radius: 5px;
+	position: relative;
+	background-color: $background-color_7;
+}
+.recette3 {
+	flex: 0 0 auto;
+	max-width: 20%;
+	margin: 10px;
+	padding: 20px;
+	color: $color_3;
+	border-radius: 5px;
+	position: relative;
+	background-color: $background-color_8;
+}
+.separator {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	top: 40px;
+	height: 1px;
+	background-color: $background-color_1;
+}
+.choixBoisson {
+	margin-top: 30px;
+	align-items: center;
+	color: $color_6;
+	background-color: $background-color_9;
+	text-align-last: center;
+	padding: 30px;
+	h2 {
+		font-size: x-large;
+	}
+}
+@media screen and (min-width: 991px) {
+	.recettes {
+		h2 {
+			padding: 4rem;
+			font-size: 5rem;
+		}
+	}
+	.recette-container {
+		p {
+			font-size: 2rem;
+			padding: 8rem;
+		}
+		h3 {
+			padding: 1rem;
+			font-size: 2rem;
+		}
+	}
+}
