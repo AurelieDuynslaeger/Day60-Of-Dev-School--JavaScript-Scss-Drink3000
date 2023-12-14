@@ -9,37 +9,47 @@
     <title>Drink 3000</title>
 </head>
 <body>
-    <section class="references container">
-        <h1>Nos Références</h1>
-        <div class="refParts">
-            <div class="part">
-                <h3 class="subtitles">cafés, hôtels, restaurants</h3>
-                <div>
+    <section class="references">
+        <div class="container">
+            <h1>Nos Références</h1>
+            <div class="refParts">
+                <div class="item">
+                    <h3 class="subtitles">cafés, hôtels, restaurants</h3>
+                </div>
+                <div class="item">
                     <img src="./assets/img/references/chr.png" alt="">
                 </div>
-            </div>
-            <div class="part">
-                <h3 class="subtitles">marques</h3>
-                <div>
+                <div class="item">
+                    <h3 class="subtitles">marques</h3>
+                </div>
+                <div class="item">
                     <img src="./assets/img/references/marques.png" alt="">
                 </div>
-            </div>
-            <div class="part">
-                <h3 class="subtitles">associations, écoles</h3>
-                <div>
+                <div class="item">
+                    <h3 class="subtitles">associations, écoles</h3>
+                </div>
+                <div class="item">
                     <img src="./assets/img/references/asso.png" alt="">
                 </div>
             </div>
+            <p>
+                Toutes les marques commerciales déposées ou non déposées citées dans ce document sont la propriété exclusive de leurs détenteurs respectifs.
+            </p>
+            <div class="refParts">
+                <div class="item">
+                    <h3 class="subtitles">publicités par l'objet</h3>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub1.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub2.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub3.png" alt="">
+                </div> 
+            </div>
         </div>
-        <p>
-            Toutes les marques commerciales déposées ou non déposées citées dans ce document sont la propriété exclusive de leurs détenteurs respectifs.
-        </p>
-        <div class="refParts">
-                <h3 class="subtitles">publicités par l'objet</h3>
-                        <img src="./assets/img/references/pub1.png" alt="">
-                        <img src="./assets/img/references/pub2.png" alt="">
-                        <img src="./assets/img/references/pub3.png" alt="">
-                    </div>
     </section>
     <section class="caroussel">
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -83,35 +93,33 @@
     </section>
     <footer>
         <div class="container">
-            <form method="post" class="form" action="">
-                <div class="title">
-                    <h2>Nous Contacter ?
-                    </h2>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email"
-                        placeholder="Email" required />
-                </div>
-                <div class="input-group">
-                    <label for="contactObject">Objet de la demande</label>
-                    <select id="contactObject" name="contactObject" required>
-                        <option value="particulier" selected>Particulier</option>
-                        <option value="professionel">Professionel</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label for="message">Votre demande</label>
-                    <textarea name="message" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="input-group">
-                    <button type="submit">Envoyer</button>
-                </div>
-            </form>
-            <section class="map">
-                <div class="title">
-                    <h2>Où sommes-nous ?</h2>
-                </div>
+            <section class="form-container">
+                <form method="post" class="form" action="">
+                        <h2>Nous Contacter ?
+                        </h2>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email"
+                            placeholder="Email" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="contactObject">Objet de la demande</label>
+                        <select id="contactObject" name="contactObject" required>
+                            <option value="particulier" selected>Particulier</option>
+                            <option value="professionel">Professionel</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Votre demande</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                        <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            <section class="map-container">
+                <h2>Où sommes-nous ?</h2>
+                
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80971.4623760984!2d2.9184986972656355!3d50.63903840000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32b0972be8243%3A0xc52bcc1b490ffe01!2sCarbone!5e0!3m2!1sfr!2sfr!4v1702476461273!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </section>
         </div> 

@@ -32,6 +32,14 @@ body {
   color: #333333;
   padding: 2rem;
 }
+.references .subtitles:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.2rem;
+  margin: 1rem auto 0 auto;
+  background: #333333;
+}
 .references img {
   width: 100%;
 }
@@ -46,8 +54,13 @@ body {
     font-size: 5rem;
   }
   .references p {
-    font-size: 1.5rem;
-    padding: 5rem;
+    font-size: 2rem;
+    padding: 8rem;
+  }
+  .references .subtitles {
+    text-transform: uppercase;
+    color: #333333;
+    padding: 1rem;
   }
 }
 
@@ -57,65 +70,77 @@ body {
     justify-content: center;
   }
   .refParts img {
-    width: 20%;
-    margin: 2rem;
+    width: 70%;
   }
-}
-
-@media screen and (min-width: 991px) {
-  .part {
+  .refParts .item {
     display: flex;
-    flex-basis: 30%;
-    align-items: flex-start;
-  }
-  .part img {
-    width: 100%;
-    margin: 1rem;
+    justify-content: center;
   }
 }
 
 footer {
   background-color: #464646;
-  color: white;
-  width: 100%;
-  margin: auto;
+  padding: 4rem;
 }
-
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .form-container,
+footer .container .map-container {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .form-container h2,
+footer .container .map-container h2 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  color: white;
+}
+footer .container .form-container form {
+  background-color: #464646;
+}
+footer .container .form-container form .input-group {
+  margin-bottom: 2rem;
+}
+footer .container .form-container form .input-group label {
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+}
+footer .container .form-container form .input-group input[type=text],
+footer .container .form-container form .input-group select,
+footer .container .form-container form .input-group textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+footer .container .form-container form .input-group textarea {
+  resize: vertical;
+}
+footer .container .form-container form button[type=submit] {
+  color: #333333;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+}
+footer .container .map-container iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
 @media screen and (min-width: 991px) {
   footer .container {
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
   }
-}
-
-footer .form {
-  width: 80%;
-  margin: auto;
-  padding: 1rem 0 1rem 0;
-}
-footer .form .title {
-  text-align: center;
-}
-footer .form .input-group {
-  display: flex;
-  justify-content: center;
-}
-footer .form input, footer .form select, footer .form textarea {
-  width: 60%;
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-
-footer .map {
-  width: 80%;
-  margin: auto;
-  padding: 1rem 0 1rem 0;
-}
-footer .map .title {
-  text-align: center;
-}
-footer .map iframe {
-  width: 100%;
+  footer .container .form-container,
+  footer .container .map-container {
+    width: 48%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
