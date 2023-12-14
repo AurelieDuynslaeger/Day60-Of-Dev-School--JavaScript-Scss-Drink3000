@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+@mixin footer-styles {
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 5rem;
+      text-align: center;
+      color: v.$color-primary;
+      font-family: v.$font-gilroy;
+    }
+  }

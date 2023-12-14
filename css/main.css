@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -10,12 +11,26 @@ body {
   font-size: 1.6rem;
   margin: 0;
   background-color: white;
+  font-family: "Gilroy", sans-serif;
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroy.woff2") format("woff2"), url("../fonts/gilroy.woff") format("woff"), url("../fonts/gilroy.ttf") format("truetype");
+}
 .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.references h1,
+.references .subtitles {
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
 }
 
 .references {
@@ -23,13 +38,10 @@ body {
 }
 .references h1 {
   text-align: center;
-  text-transform: uppercase;
-  color: #333333;
   padding: 1rem;
+  font-size: 4rem;
 }
 .references .subtitles {
-  text-transform: uppercase;
-  color: #333333;
   padding: 2rem;
 }
 .references .subtitles:after {
@@ -58,9 +70,8 @@ body {
     padding: 8rem;
   }
   .references .subtitles {
-    text-transform: uppercase;
-    color: #333333;
     padding: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -97,6 +108,7 @@ footer .container .map-container h2 {
   margin-bottom: 5rem;
   text-align: center;
   color: white;
+  font-family: "Gilroy", sans-serif;
 }
 footer .container .form-container form {
   background-color: #464646;
@@ -115,8 +127,8 @@ footer .container .form-container form .input-group select,
 footer .container .form-container form .input-group textarea {
   width: 100%;
   padding: 1.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid white;
+  border-radius: 1rem;
 }
 footer .container .form-container form .input-group textarea {
   resize: vertical;
@@ -131,6 +143,7 @@ footer .container .map-container iframe {
   width: 100%;
   height: 350px;
   border: 0;
+  border-radius: 1rem;
 }
 @media screen and (min-width: 991px) {
   footer .container {
