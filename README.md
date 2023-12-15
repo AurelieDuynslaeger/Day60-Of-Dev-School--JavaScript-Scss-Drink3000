@@ -10,7 +10,7 @@
 Ce projet a été réalisé dans le cadre de notre apprentissage continu de JavaScript, de la manipulation du DOM, de la gestion des événements au clic et au scroll.
 
 ## Présentation
-Ce travail a été effectué en binôm et notre objectif était de créer un simili-clone du site energydrink.fr pour approfondir nos compétences techniques.
+Ce travail a été effectué en binôme et notre objectif était de créer un simili-clone du site energydrink.fr pour approfondir nos compétences techniques.
 
 ## Technologies Utilisées
 - **JavaScript (ES6)** : Utilisé pour la logique applicative, la manipulation du DOM et la gestion des événements.
