@@ -5,10 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/59b11fefb3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <title>Drink 3000</title>
 </head>
 <body>
-    
+    <section class="navbar" id="navbar">
+        <div class="container">
+            <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+            <nav>
+                <a href="">Recettes</a>
+                <a href="">Références</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="indexVideo">
+        <video autoplay loop><source src="/assets/vid/mp4/Pour.mp4" type="video/mp4"></video>
+        <div class="contenuVideo">
+          <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+          <p>Découvrez nos boissons énergisantes !</p>
+            <div class="flecheScroll">
+                <i class="fa-solid fa-arrow-down fa-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="recettesDuSite">
+
+        <div class="recettes">
+            <h2>NOS RECETTES</h2>
+            <div class="boutonsProduits">
+                <button class="energisantes">Energisantes</button>
+                <button class="desalterantes">Désaltérantes</button>
+            </div>
+        </div>
+
+        <div class="recette-container">
+            <div class="recette1">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                        <h3>Original</h3>
+                        <img src="./assets/img/energizing.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette2">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                    <h3>Mojito</h3>
+                    <img src="./assets/img/energizing.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, saveur mojito à la caféine et sans alcool.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette3">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                    <h3>Tropical</h3>
+                    <img src="./assets/img/cooling.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, aux fruits, caféine, à taurine et extraits de gingembre.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section>
+        <div class="choixBoisson">
+            <h2>Votre choix :</h2>
+            <p id="selectedDrink">Boisson sélectionée</p>
+        </div>
+    </section>
+    <section class="references">
+        <div class="container">
+            <h2>Nos Références</h2>
+            <div class="refParts">
+                <div class="item">
+                    <h3 class="subtitles">cafés, hôtels, restaurants</h3>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/chr.png" alt="">
+                </div>
+                <div class="item">
+                    <h3 class="subtitles">marques</h3>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/marques.png" alt="">
+                </div>
+                <div class="item">
+                    <h3 class="subtitles">associations, écoles</h3>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/asso.png" alt="">
+                </div>
+            </div>
+            <p>
+                Toutes les marques commerciales déposées ou non déposées citées dans ce document sont la propriété exclusive de leurs détenteurs respectifs.
+            </p>
+            <div class="refParts">
+                <div class="item">
+                    <h3 class="subtitles">publicités par l'objet</h3>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub1.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub2.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/references/pub3.png" alt="">
+                </div> 
+            </div>
+        </div>
+    </section>
+    <section class="carousel">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/carousel-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Garantie 100% Fraîcheur</h3>
+                    <p>Nous garantissons votre satisfaction lors de la dégustation de nos boissons.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Garantie 100% Fraîcheur</h3>
+                    <p>Nous garantissons votre satisfaction lors de la dégustation de nos boissons.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carousel-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Garantie 100% Fraîcheur</h3>
+                    <p>Nous garantissons votre satisfaction lors de la dégustation de nos boissons.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+    <footer>
+        <div class="container">
+            <section class="form-container">
+                <form method="post" class="form" action="">
+                        <h2>Nous Contacter ?
+                        </h2>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email"
+                            placeholder="Email" required />
+                    </div>
+                    <div class="input-group">
+                        <label for="contactObject">Objet de la demande</label>
+                        <select id="contactObject" name="contactObject" required>
+                            <option value="particulier" selected>Particulier</option>
+                            <option value="professionel">Professionel</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">Votre demande</label>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                        <button type="submit">Envoyer</button>
+                </form>
+            </section>
+            <section class="map-container">
+                <h2>Où sommes-nous ?</h2>
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80971.4623760984!2d2.9184986972656355!3d50.63903840000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32b0972be8243%3A0xc52bcc1b490ffe01!2sCarbone!5e0!3m2!1sfr!2sfr!4v1702476461273!5m2!1sfr!2sfr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div> 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>

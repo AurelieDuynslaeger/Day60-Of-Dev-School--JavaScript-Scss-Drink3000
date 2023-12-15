@@ -1,12 +1,22 @@
 // Variables
 
-//couleurs qu'on changera pour le projet ;)
+//couleurs police et bg body
 $color-primary : white;
-//couleur bg header et div formulaire
-$color-bg :#333333;
-//couleur bg bouton et div qui affiche la recherche (client introuvable ou facture)
-$color-bg-btnDiv : #b89370;
+$color-secondary: #333333;
+$color_6: rgb(82, 82, 82);
+//couleur bg div, filters et footer
+$color-bgDark:#464646;
+$color-bgLight:#d2cfc3;
+$background-color_4: rgba(0, 0, 0, 0.3);
+//couleur bg div, filters et footer
+$color-cardRed : #e20614;
+$color-cardGreen: #a0c525;
+$color-cardOrange: #c94c05;
 
+
+//polices 
+$font-titi: 'Titillium Web', sans-serif;
+$font-gilroy: 'Gilroy', sans-serif;
 
 //Breakpoints
 $xs-breakpoint: 575px;

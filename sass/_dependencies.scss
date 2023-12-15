@@ -1,0 +1,12 @@
+//import des polices
+
+//Titillium
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+//Gilroy
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy.woff2') format('woff2'), 
+         url('../fonts/gilroy.woff') format('woff'), 
+         url('../fonts/gilroy.ttf') format('truetype'); 
+  }

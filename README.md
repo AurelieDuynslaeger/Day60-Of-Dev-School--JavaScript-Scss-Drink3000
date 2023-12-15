@@ -1,27 +1,23 @@
-## DRINK 3000
 
-Les grandes lignes ! ;) 
+# Simili-Clone EnergyDrink.fr
 
-Initalisation de sass (npm install -g sass)
-lancer le watch sass pour la partie front par la suite (sass --watch sass/main.scss css/main.css)
+![60ème Jour de Coding](https://img.shields.io/badge/60%C3%A8me%20Jour%20de%20Coding-Yes-brightgreen)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![DOM Manipulation](https://img.shields.io/badge/DOM-Manipulation-green)
+![Events](https://img.shields.io/badge/Events-Click%20%7C%20Scroll-blue)
+![Sass](https://img.shields.io/badge/Sass-SCSS-pink)
 
-Links faits dans le head html (css, js, fontawesome)
-Fonts pas encore ajoutées mais c'est un détail ;p
+Ce projet a été réalisé dans le cadre de notre apprentissage continu de JavaScript, de la manipulation du DOM, de la gestion des événements au clic et au scroll.
 
-dossiers assets ok avec le starter !
+## Présentation
+Ce travail a été effectué en binôm et notre objectif était de créer un simili-clone du site energydrink.fr pour approfondir nos compétences techniques.
+
+## Technologies Utilisées
+- **JavaScript (ES6)** : Utilisé pour la logique applicative, la manipulation du DOM et la gestion des événements.
+- **Sass (SCSS)** : Employé pour la structuration et la gestion modulaire des styles.
 
 
-# JS
-
-- Header : apparait au scroll (le h1 de drink 3000 dans le hero se déplacerait dans une navbar, et celle-ci contiendrait les différents liens du menu sur la droite -> à voir s'il faut jouer avec les class "visible" et "hidden" comme les anciens projets) / header qui au responsive, ses liens se modulent en menu burger.
-
-- selection des boissons : à première vue, ce sont les div qui sont en soi des liens (cf btn selectionner ou des toggles) et qui au clik deviendraient soit :
-    .1- séléctionnées (puis apparition du nom de la boisson sélectionnée dans un div dessous - div qui sera surement vide sur le html et qui selon la selection serait en visible avec le contenu qui changerait)
-
-    .2- au filtrage (energisante ou rafraichissante), divs toutes actives, et au click sur le filtre ces divs seraient en class "inactive" avec le textContent qui changerait.
-
-alors du coup le js ici jouerait sur les class des divs selon le clik ou le filtre choisi. ca ressemble à du classList.add ou classList.remove ?
-
-Pour le reste, à la lecture, tu me diras si j'ai oublié quelque chose !
-il me semble que l'autre grosse partie ca reste du responsive ! :)
+## Collaborateurs
+- [Aurélien](https://github.com/Aurelien-david-pro)
+- [Aurélie](https://github.com/AureLeeLi)
 

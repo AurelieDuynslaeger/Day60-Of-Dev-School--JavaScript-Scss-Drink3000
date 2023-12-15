@@ -2,4 +2,342 @@
 @use "reset";
 @use "variables" as v;
 @use "mixins" as mix;
+@use "dependencies" as d;
 
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+/* navbar */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: v.$color-bgDark;
+  opacity: 85%;
+	color: v.$color-primary;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.5s ease-in-out;
+	z-index: 7;
+	a {
+		color: v.$color-primary;
+		margin: 0 10px;
+		text-decoration: none;
+    font-size: 2rem;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	h1 {
+		color: v.$color-primary;
+		margin-right: auto;
+    font-size: 4rem;
+	}
+	i {
+		color:v.$color-primary;
+		margin-right: auto;
+	}
+}
+
+/* video */
+.indexVideo {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	p {
+		font-size: 75px;
+	}
+}
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.contenuVideo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	color:v.$color-primary;
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	h1 {
+		margin: 0;
+		color: v.$color-primary;
+		font-size: 60px;
+	}
+	p {
+		margin-bottom: 20%;
+	}
+}
+
+i {
+	margin: 0;
+	color: v.$color-primary;
+	font-size: 60px;
+}
+
+.flecheScroll {
+	font-size: 50px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* recettes */
+
+//filtres
+.boutonsProduits{
+  display: flex;
+  justify-content: space-around;
+  margin:2rem 0;
+}
+.energisantes,
+.desalterantes {
+  @include mix.filtreDrink;
+}
+
+//recettes
+.recettes h2, 
+.container h2{
+  text-align: center;
+	margin: 2rem 0;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  color: v.$color-secondary;
+  font-family: v.$font-titi;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.recette-container {
+  @media screen and (min-width:v.$md-breakpoint){
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+//infos & select btn
+.buttons {
+	display: flex;
+	justify-content: space-between;
+  margin: 3rem auto;
+}
+.plusInfos {
+  @include mix.recipeBtn(v.$background-color_4);
+	border-radius: 20px;
+}
+.selectionner {
+  @include mix.recipeBtn (inherit);
+  text-transform: uppercase;
+}
+
+.recette-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h3{
+    font-family: v.$font-gilroy;
+    font-size: 4rem;
+  }
+  & img {
+    width:5%;
+  }
+}
+
+.recette1 {
+  @include mix.recipeDiv(v.$color-cardRed)
+}
+.recette2 {
+  @include mix.recipeDiv(v.$color-cardGreen)
+}
+.recette3 {
+  @include mix.recipeDiv(v.$color-cardOrange)
+}
+
+.separator {
+  margin:2rem auto;
+	height: 2px;
+	background-color: v.$color-primary;
+}
+
+/* Choix boisson */
+.choixBoisson {
+	margin-top: 30px;
+	align-items: center;
+	color: v.$color_6;
+	background-color: v.$color-bgLight;
+	text-align-last: center;
+	padding: 30px;
+	h2 {
+		font-size: 4rem;
+	}
+  p {
+  font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+	.recettes {
+		h2 {
+			padding: 4rem;
+			font-size: 5rem;
+		}
+	}
+	.recette-container {
+		p {
+			font-size: 2rem;
+			padding: 2rem;
+		}
+		h3 {
+			padding: 1rem;
+			font-size: 2rem;
+		}
+	}
+}
+
+
+/* Nos Références */
+.references .subtitles {
+  text-transform: uppercase;
+  color: v.$color-secondary;
+  font-family: v.$font-titi;
+  font-weight: bolder;
+}
+
+.references {
+    width:100%;
+    .subtitles {
+        padding: 2rem;
+    }
+    .subtitles:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.2rem;
+        margin: 1rem auto 0 auto;
+        background: v.$color-secondary;
+    }
+    & img{
+        width:100%;
+    }
+    & p{
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 1rem;
+    }
+    @media screen and (min-width:v.$md-breakpoint){
+        & h1{
+            padding:4rem;
+            font-size: 5rem;
+        }
+        & p{
+            font-size: 2rem;
+            padding: 8rem;
+        }
+        .subtitles {
+            padding: 1rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+.refParts {
+    @media screen and (min-width:v.$md-breakpoint){
+        display: flex;
+        justify-content: center;
+        & img{
+            width:70%;
+        }
+        & .item {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+/* Form et Map */
+footer {
+    background-color: v.$color-bgDark;
+    padding: 4rem;
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+  
+      .form-container,
+      .map-container {
+        @include mix.footer-styles;
+      }
+  
+      .form-container {
+        form {
+            background-color: v.$color-bgDark;
+  
+          .input-group {
+            margin-bottom: 2rem;
+            label {
+              display: block;
+              font-weight: bold;
+              font-size: 2rem;
+              color:v.$color-primary;
+            }
+            input[type="text"],
+            select,
+            textarea {
+              width: 100%;
+              padding: 1.5rem;
+              border: 1px solid v.$color-primary;
+              border-radius: 1rem;
+            }
+            textarea {
+              resize: vertical;
+            }
+          }
+          button[type="submit"] {
+            color: v.$color-secondary;
+            padding: 1rem 2rem;
+            border: none;
+            font-size: 1rem;
+          }
+        }
+      }
+  
+      .map-container {
+        iframe {
+          width: 100%;
+          height: 350px;
+          border: 0;
+          border-radius: 1rem;
+        }
+      }
+    }
+  
+    @media screen and (min-width:v.$md-breakpoint) {
+      .container {
+        flex-direction: row;
+        justify-content: space-between;
+  
+        .form-container,
+        .map-container {
+          width: 48%;
+        }
+      }
+    }
+  }
+  
