@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
 * {
   box-sizing: border-box;
@@ -25,7 +26,267 @@ body {
   padding: 4rem 0;
 }
 
-.references h1,
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #464646;
+  opacity: 85%;
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 7;
+}
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar h1 {
+  color: white;
+  margin-right: auto;
+  font-size: 4rem;
+}
+.navbar i {
+  color: white;
+  margin-right: auto;
+}
+
+/* video */
+.indexVideo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.indexVideo p {
+  font-size: 75px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contenuVideo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.contenuVideo h1 {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+}
+.contenuVideo p {
+  margin-bottom: 20%;
+}
+
+i {
+  margin: 0;
+  color: white;
+  font-size: 60px;
+}
+
+.flecheScroll {
+  font-size: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* recettes */
+.boutonsProduits {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.energisantes,
+.desalterantes {
+  color: #464646;
+  background-color: #d2cfc3;
+  border-radius: 4rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .energisantes,
+  .desalterantes {
+    font-size: 4rem;
+  }
+}
+
+.recettes h2,
+.container h2 {
+  text-align: center;
+  margin: 2rem 0;
+  letter-spacing: 2rem;
+  text-transform: uppercase;
+  color: #333333;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 991px) {
+  .recette-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.plusInfos {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.selectionner {
+  background-color: inherit;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.recette-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.recette-header h3 {
+  font-family: "Gilroy", sans-serif;
+  font-size: 4rem;
+}
+.recette-header img {
+  width: 5%;
+}
+
+.recette1 {
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  margin: 3rem auto;
+  color: white;
+  background-color: #e20614;
+  border-radius: 5px;
+}
+.recette1 p {
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .recette1 {
+    flex-basis: 30%;
+  }
+}
+
+.recette2 {
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  margin: 3rem auto;
+  color: white;
+  background-color: #a0c525;
+  border-radius: 5px;
+}
+.recette2 p {
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .recette2 {
+    flex-basis: 30%;
+  }
+}
+
+.recette3 {
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  margin: 3rem auto;
+  color: white;
+  background-color: #c94c05;
+  border-radius: 5px;
+}
+.recette3 p {
+  font-size: 2rem;
+}
+@media screen and (min-width: 991px) {
+  .recette3 {
+    flex-basis: 30%;
+  }
+}
+
+.separator {
+  margin: 2rem auto;
+  height: 2px;
+  background-color: white;
+}
+
+/* Choix boisson */
+.choixBoisson {
+  margin-top: 30px;
+  align-items: center;
+  color: rgb(82, 82, 82);
+  background-color: #d2cfc3;
+  text-align-last: center;
+  padding: 30px;
+}
+.choixBoisson h2 {
+  font-size: 4rem;
+}
+.choixBoisson p {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 991px) {
+  .recettes h2 {
+    padding: 4rem;
+    font-size: 5rem;
+  }
+  .recette-container p {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+  .recette-container h3 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+}
+/* Nos Références */
 .references .subtitles {
   text-transform: uppercase;
   color: #333333;
@@ -35,11 +296,6 @@ body {
 
 .references {
   width: 100%;
-}
-.references h1 {
-  text-align: center;
-  padding: 1rem;
-  font-size: 4rem;
 }
 .references .subtitles {
   padding: 2rem;
@@ -89,6 +345,7 @@ body {
   }
 }
 
+/* Form et Map */
 footer {
   background-color: #464646;
   padding: 4rem;

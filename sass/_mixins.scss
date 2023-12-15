@@ -1,5 +1,42 @@
 @use "variables" as v;
 
+@mixin filtreDrink {
+  color: v.$color-bgDark;
+	background-color: v.$color-bgLight;
+	border-radius: 4rem;
+	border: none;
+	padding: 1.5rem 2rem;
+  font-size: 2rem;
+  @media screen and (min-width:v.$md-breakpoint) {
+    font-size: 4rem;
+  }
+}
+
+@mixin recipeBtn ($background-color){
+  background-color: $background-color;
+  border: none;
+  color: v.$color-primary;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+@mixin recipeDiv($background-color){
+  width: 80%;
+  margin: auto;
+	padding: 3rem;
+  margin: 3rem auto;
+	color: v.$color-primary;
+  background-color: $background-color;
+	border-radius: 5px;
+  & p {
+    font-size: 2rem;
+  }
+  @media screen and (min-width:v.$md-breakpoint) {
+    flex-basis: 30%;
+  }
+}
+
+
 @mixin footer-styles {
     display: flex;
     flex-direction: column;

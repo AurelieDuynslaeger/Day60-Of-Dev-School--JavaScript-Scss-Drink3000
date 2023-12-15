@@ -10,9 +10,93 @@
     <title>Drink 3000</title>
 </head>
 <body>
+    <section class="navbar" id="navbar">
+        <div class="container">
+            <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+            <nav>
+                <a href="">Recettes</a>
+                <a href="">Références</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="indexVideo">
+        <video autoplay loop><source src="/assets/vid/mp4/Pour.mp4" type="video/mp4"></video>
+        <div class="contenuVideo">
+          <h1><i class="fa-solid fa-martini-glass-citrus"></i> Drink 3000</h1>
+          <p>Découvrez nos boissons énergisantes !</p>
+            <div class="flecheScroll">
+                <i class="fa-solid fa-arrow-down fa-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="recettesDuSite">
+
+        <div class="recettes">
+            <h2>NOS RECETTES</h2>
+            <div class="boutonsProduits">
+                <button class="energisantes">Energisantes</button>
+                <button class="desalterantes">Désaltérantes</button>
+            </div>
+        </div>
+
+        <div class="recette-container">
+            <div class="recette1">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                        <h3>Original</h3>
+                        <img src="./assets/img/energizing.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, à la taurine et chargée en caféine.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette2">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                    <h3>Mojito</h3>
+                    <img src="./assets/img/energizing.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, saveur mojito à la caféine et sans alcool.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recette3">
+                <div class="recetteContenu">
+                    <div class="recette-header">
+                    <h3>Tropical</h3>
+                    <img src="./assets/img/cooling.svg" alt="" srcset="">
+                    </div>
+                    <div class="separator"></div>
+                    <p>Boisson énergisante gazeuse, aux fruits, caféine, à taurine et extraits de gingembre.</p>
+                    <div class="buttons">
+                        <button class="plusInfos">Plus d'infos</button>
+                        <button class="selectionner">Sélectionner</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <section>
+        <div class="choixBoisson">
+            <h2>Votre choix :</h2>
+            <p id="selectedDrink">Boisson sélectionée</p>
+        </div>
+    </section>
     <section class="references">
         <div class="container">
-            <h1>Nos Références</h1>
+            <h2>Nos Références</h2>
             <div class="refParts">
                 <div class="item">
                     <h3 class="subtitles">cafés, hôtels, restaurants</h3>
