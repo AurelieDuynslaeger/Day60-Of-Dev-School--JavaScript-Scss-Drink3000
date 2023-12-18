@@ -17,13 +17,37 @@ window.addEventListener('scroll', function() {
 let energizFilter = document.querySelector('.energisantes');
 let coolFilter = document.querySelector('.desalterantes');
 
+//récup des divs ayant la class cooling ou energizing
+let recettesEnergizing = document.querySelectorAll('.recetteContenu.energizing');
+let recettesCooling = document.querySelectorAll('.recetteContenu.cooling');
+
 energizFilter.addEventListener('click', ()=>{
-    //les div ayant la class cooling/desalterante deviennent grisées et leur contenu change non disponible
+    //les div ayant la class cooling deviennent grisées et leur contenu <p> change en "non disponible, veuillez modifier votre séléction pour choisir cette recette"
+    recettesCooling.forEach((recette) => {
+        recette.style.opacity = '0.5';
+        recette.style.pointerEvents = 'none'; 
+
+        let description = recette.querySelector('p');
+        if (description) {
+            description.textContent = "Non disponible, veuillez modifier votre sélection pour choisir cette recette";
+        }
+    });
+
 });
 
 coolFilter.addEventListener('click', ()=>{
-    //les div ayant la class energize/energisante deviennent grisées et leur contenu change non disponible
+    //les div ayant la class energizing deviennent grisées et leur contenu <p> change en "non disponible, veuillez modifier votre séléction pour choisir cette recette"
+    recettesEnergizing.forEach((recette) => {
+        recette.style.opacity = '0.5';
+        recette.style.pointerEvents = 'none'; 
+
+        let description = recette.querySelector('p');
+        if (description) {
+            description.textContent = "Non disponible, veuillez modifier votre sélection pour choisir cette recette";
+        }
+    });
 });
+
 
 //selection boissons
 //récup de tous les boutons ".selectionner"
